@@ -1,6 +1,6 @@
 1. What is responsible for defining the routes of the games resource?
 
-  * The Request Helper code seems to be responsible. The games model interprets what the viewer is asking for and sends that to the appropriate restful route via RequestHelper (which then communicates with the db/server)
+  * The Create Router code seems to be responsible.
 
 2. What are the the responsibilities of server.js?
 
@@ -20,8 +20,15 @@
 
 6. Which of the games API routes does the front-end application consume (i.e. make requests to)?
 
-  * /api/games 
+  * /api/games
 
 7. What are we using the MongoDB Driver for?
 
-  * To allow Node.js to communicate with a MongoDB
+  * To allow Node.js to communicate with a MongoDB.
+
+
+EXTENSION:
+
+Why do we need to use ObjectId from the MongoDB driver?
+
+  * Need to convert the string ID into an object that can be accurately compared against the DB objects
